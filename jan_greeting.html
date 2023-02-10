@@ -95,7 +95,11 @@ function dispalyGreetings(today){
         min = today.getMinutes();
         name = "Jan"
         if (hrs == 14 && min == 46) 
-            greet = 'Did you hear about the restaurant on Mars?'
+            greet = 'Did you hear about the restaurant on Mars?';
+        if (hrs == 14 && min == 51)
+            greet = 'Great menu but no atmoshpere (;⌣̀_⌣́)';
+        else 
+            greet = 'Good Afternoon' + name;
         // if (hrs < 12)
         //     greet = 'Good Morning  '+name;
         // else if (hrs >= 12 && hrs <= 17)
