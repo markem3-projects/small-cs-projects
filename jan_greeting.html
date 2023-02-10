@@ -94,16 +94,23 @@ function dispalyGreetings(today){
         hrs = today.getHours();
         min = today.getMinutes();
         name = "Jan"
-        if (hrs == 14 && min == 55) 
+        if (hrs == 15 && min == 5) 
             greet = 'Did you hear about the restaurant on Mars?';
-        if (hrs == 14 && min == 57)
+        else if (hrs == 15 && min == 7)
             greet = 'Great menu but no atmosphere (;⌣̀_⌣́)';
-        if (hrs < 12)
-            greet = 'Good Morning  '+name;
-        else if (hrs >= 12 && hrs <= 17)
-            greet = 'Good Afternoon '+name;
-        else if (hrs >= 17 && hrs <= 24)
-            greet = 'Good Evening  '+name;
+        else if (hrs <= 15 && min < 5)
+            greet = 'Good Afternoon ' + name;
+        else if (hrs <= 15 && min > 5 && min < 7)
+            greet = 'Good Evening ' + name;
+        else if (hrs <=15 && min > 7)
+            greet = 'Good Night ' + name;
+        
+        // if (hrs < 12)
+        //     greet = 'Good Morning  '+name;
+        // else if (hrs >= 12 && hrs <= 17)
+        //     greet = 'Good Afternoon '+name;
+        // else if (hrs >= 17 && hrs <= 24)
+        //     greet = 'Good Evening  '+name;
         document.getElementById('greet').innerHTML = greet;
         
 
